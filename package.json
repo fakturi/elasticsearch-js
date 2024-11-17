@@ -1,12 +1,13 @@
 {
-  "name": "@elastic/elasticsearch",
+  "name": "@fakturi/elasticsearch",
   "version": "8.16.0",
   "versionCanary": "8.16.0-canary.0",
   "description": "The official Elasticsearch client for Node.js",
   "main": "./index.js",
   "types": "index.d.ts",
   "exports": {
-    "require": "./index.js"
+    "require": "./index.js",
+    "import": "./index.js"
   },
   "scripts": {
     "test": "npm run build && npm run lint && tap",
@@ -93,8 +94,6 @@
   },
   "tap": {
     "disable-coverage": true,
-    "files": [
-      "test/unit/{*,**/*}.test.ts"
-    ]
+    "files": ["test/unit/{*,**/*}.test.ts"]
   }
 }
